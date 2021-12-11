@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.Matchers.*;
 
-public class ClientsTest {
+ class ClientsTest {
 
     @BeforeAll
     static void setup(){
@@ -16,7 +16,7 @@ public class ClientsTest {
 
 
     @Test
-    public void testListaCliente_TodosOsClientesSaoListados(){
+     void testListaCliente_TodosOsClientesSaoListados(){
         RestAssured.given()
                 .log().all()
                 .when()
@@ -28,7 +28,7 @@ public class ClientsTest {
     }
 
     @Test
-    public void testeValidaUmCliente(){
+     void testeValidaUmCliente(){
 
         int id = 4;
 
@@ -43,7 +43,7 @@ public class ClientsTest {
     }
 
     @Test
-    public void NovoUmCliente(){
+     void NovoUmCliente(){
 
 
         RestAssured.given()
@@ -63,7 +63,7 @@ public class ClientsTest {
     }
 
     @Test
-    public void AtualizaUmCliente(){
+     void AtualizaUmCliente(){
 
 
         RestAssured.given()
@@ -84,7 +84,7 @@ public class ClientsTest {
     }
 
     @Test
-    public void DeletaUmCliente(){
+     void DeletaUmCliente(){
         RestAssured.given()
                 .log().all()
                 .when()
